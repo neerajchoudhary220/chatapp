@@ -1,0 +1,116 @@
+{{>up}}
+{{>nav}}
+<form class="container p-2">
+    <div class="border border-2 border-info p-3 rounded">
+        <h4 class="d-flex justify-content-center"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40"
+                fill="currentColor" class="bi bi-alarm-fill text-info" viewBox="0 0 16 16">
+                <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+            </svg></h4>
+        <div class="dropdown-divider"></div>
+        {{!-- =========== F U L L - N A M E ======== --}}
+        <div class="row px-5 p-3">
+            <div class="col-sm-2 col-md-2">
+                <label class="col-form-label">Full Name:</label>
+            </div>
+            <div class="col-sm-10 col-md-6">
+                <input type="text" class="form-control"
+                autofocus=""
+                 placeholder="Enter your name...">
+            </div>
+        </div>
+        {{!-- ========================================= --}}
+
+        {{!-- =================== E M A I L =========================== --}}
+        <div class="row px-5">
+            <div class="col-sm-2 col-md-2">
+                <label class="col-form-label">Email:</label>
+            </div>
+            <div class="col-sm-10 col-md-6 ">
+                <input type="email" class="form-control">
+            </div>
+        </div>
+        {{!-- ========================================================================= --}}
+
+        {{!-- ============================================ SELECT GENDER ===============================================
+        --}}
+        <div class="row px-5 p-3">
+
+            <div class="col-sm-2 col-md-2">
+                <label class="form-label">Select Gender:</label>
+            </div>
+
+            <div class="col-auto">
+
+                <div class="form-check form-check-inline">
+
+                    <input class="form-check-input" type="radio" name="gender" checked>
+                    <label class="form-check-label">Male</label>
+                </div>
+
+                <div class="form-check form-check-inline">
+
+                    <input class="form-check-input" type="radio" name="gender">
+                    <label class="form-check-label">Female</label>
+                </div>
+                <div class="form-chceck form-check-inline">
+                    <input type="radio" class="form-check-input" name="gender">
+                    <label class="form-check-label">Other</label>
+                </div>
+
+            </div>
+
+        </div>
+        {{!--
+        ==============================================================================================================
+        --}}
+
+
+        {{!-- ========================= D A T E O F B I R T H ================================= --}}
+        <div class="px-5 row ">
+            <div class="col-md-2 col-sm-2">
+                <label class="col-form-label">DOB:</label>
+
+
+            </div>
+            <div class="col-sm-10 col-md-3">
+                <input type="date" class="form-control" min="1980-01-01">
+            </div>
+        </div>
+        {{!-- ======================================================================== --}}
+
+{{!-- =================== MOBILE NO.====================================== --}}
+<div class="row px-5 p-3">
+    <div class="col-sm-2 col-md-2">
+        <label class="col-form-label">Mobile No.:</label>
+    </div>
+    <div class="col-sm-10 col-md-3">
+<div class="input-group">
+<span class="input-group-text">+91</span>
+<input type="tel" class="form-control" maxlength="10" min="10">
+</div>
+</div> 
+</div>
+<!-- ===========================================================================!-->
+
+<div class="row px-5">
+    <div class="col-sm-2 col-md-2">
+        <label class="col-form-label">Password:</label>
+    </div>
+    <div class="col-sm-10 col-md-3">
+        <input type="password" minlength="6" required="" class="form-control"
+        placeholder="************">
+    </div>
+</div>
+<div class="row p-3">
+    <div class="d-flex justify-content-center">
+<input type="submit" class="btn btn-info rounded text-white" value="SUBMIT">
+</div>
+    </div>
+    </div>
+
+
+   
+   
+</form>
+
+{{>down}}
